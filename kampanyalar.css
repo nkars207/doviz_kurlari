@@ -1,0 +1,63 @@
+.header {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.header-image {
+    width: 200px;  
+    height: auto;  
+    display: block; 
+    margin: 0 auto; 
+}
+
+.header-gif {
+    width: 200px; /* İstediğiniz boyut */
+    height: auto; /* Orantıyı korur */
+    display: inline-block; /* Diğer elemanlarla yan yana görünüm için */
+    margin-right: 10px; /* Diğer elemanlarla aralar */
+}
+
+.header-content {
+    display: flex; /* Flexbox ile düzenleme yapın */
+    align-items: center; /* Dikey hizalama */
+    justify-content: center; /* Yatay ortalama */
+}
+
+.container {
+    display: flex; /* Flexbox ile yan yana dizme */
+    justify-content: center; /* Ortalamak için */
+    margin: 80px 0; /* Üst ve alt boşluk */
+    gap: 20px; /* Resimler arasındaki boşluk */
+}
+
+.reklam {
+    width: 350px; /* Resim genişliği */
+    height: 300px; /* Resim yüksekliği */
+    object-fit: cover; /* Resimlerin orantılı görünmesi için */
+}
+
+
+.small-container {
+    display: flex; /* Alt resimleri yan yana dizme */
+    flex-wrap: wrap; /* Taşma durumunda alt satıra geçmesi için */
+    justify-content: center; /* Ortalamak için */
+    gap: 10px; /* Resimler arasındaki boşluk */
+    margin: 20px 0; /* Üst ve alt boşluk */
+}
+
+.small-item {
+    text-align: center; /* Başlıkları ortalamak için */
+}
+
+.small-reklam {
+    width: 100px; /* Alt resim genişliği */
+    height: 75px; /* Alt resim yüksekliği */
+    object-fit: cover; /* Resimlerin orantılı görünmesi için */
+}
+
+.caption {
+    margin-top: 5px; /* Resim ile başlık arasında boşluk */
+    font-size: 12px; /* Başlık boyutu */
+    color: #333; /* Başlık rengi */
+}

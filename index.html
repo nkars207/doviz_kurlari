@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döviz Kuru Uygulaması</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="small-logo">
+                <img src="yuzuncu-yil-logo.gif" alt="small-logo" class="header-gif">
+            </div>
+            <h1>
+                <a href="index.html">
+                    <img src="images.png" alt="logo" class="logo">
+                </a>
+            </h1>
+            <a href="buton.html" class="header-button">İnternet Şubemiz</a>
+            <a href="kampanyalar.html" class="header-button">Kampanyalarımız</a>
+        </div>
+    </header>
+
+    <div class="sidebar-right">
+        <div class="ad-container">
+            <img src="453aea95788433.Y3JvcCwyMDQ1LDE1OTksMTA5MywyODg.jpg" alt="Right Ad 1" class="ad-image">
+            <img src="maxresdefault.jpg" alt="Right Ad 2" class="ad-image">
+            <img src="istockphoto-483658563-612x612.jpg" alt="Right Ad 3" class="ad-image">
+            <img src="doviz.webp" alt="Right Ad 4" class="ad-image">
+        </div>
+    </div>
+
+    <main>
+        <h2>Döviz Kurları</h2>
+        <button id="loadbutton" class="action-button">Döviz Al/Sat</button>
+        <div id="content"></div>
+    </main>
+
+
+    <div class="info-box">
+        <p>Ülkelerin para birimlerinin birbirine olan oranı sürekli olarak değişir.
+        Bu değişimlerin anlık olarak takip edilmesi canlı döviz kuru takibi olarak adlandırılır.<br>
+        Döviz kurları canlı takip edildiğinde döviz piyasasının nabzını tutmanıza yardımcı olur.<br>
+        Düzenli canlı kur takibi ile finansal kararlarınızı güçlendirebilir, finansal okuryazarlığınızı artırabilirsiniz..</p>
+        </div>
+
+
+        <div id="container">
+            <div id="mainl">
+                <div class="header-wrapper">
+                    <h4>DOVİZ KURU ÇEVİRİCİ </h4>
+                </div>
+
+                <div class="content-wrapper">
+                    <input id="amount" type="number" placeholder="Miktar">
+
+                    <select id="firstCurrencyOption">
+                        <option selected>USD</option>
+                        <option>EUR</option>
+                        <option>JPY</option>
+                        <option>BGN</option>
+                        <option>CZK</option>
+                        <option>DKK</option>
+                        <option>GBP</option>
+                        <option>HUF</option>
+                        <option>PLN</option>
+                        <option>RON</option>
+                        <option>SEK</option>
+                        <option>CHF</option>
+                        <option>ISK</option>
+                        <option>NOK</option>
+                        <option>HRK</option>
+                        <option>RUB</option>
+                        <option>TRY</option>
+                        <option>AUD</option>
+                        <option>BRL</option>
+                        <option>CAD</option>
+                        <option>CNY</option>
+                        <option>HKD</option>
+                        <option>IDR</option>
+                        <option>ILS</option>
+                        <option>INR</option>
+                        <option>KRW</option>
+                        <option>MXN</option>
+                        <option>MYR</option>
+                        <option>NZD</option>
+                        <option>PHP</option>
+                        <option>SGD</option>
+                        <option>THB</option>
+                        <option>ZAR</option>
+                    </select>
+
+                    <select id="secondCurrencyOption">
+                        <option selected>USD</option>
+                        <option>EUR</option>
+                        <option>JPY</option>
+                        <option>BGN</option>
+                        <option>CZK</option>
+                        <option>DKK</option>
+                        <option>GBP</option>
+                        <option>HUF</option>
+                        <option>PLN</option>
+                        <option>RON</option>
+                        <option>SEK</option>
+                        <option>CHF</option>
+                        <option>ISK</option>
+                        <option>NOK</option>
+                        <option>HRK</option>
+                        <option>RUB</option>
+                        <option selected>TRY</option>
+                        <option>AUD</option>
+                        <option>BRL</option>
+                        <option>CAD</option>
+                        <option>CNY</option>
+                        <option>HKD</option>
+                        <option>IDR</option>
+                        <option>ILS</option>
+                        <option>INR</option>
+                        <option>KRW</option>
+                        <option>MXN</option>
+                        <option>MYR</option>
+                        <option>NZD</option>
+                        <option>PHP</option>
+                        <option>SGD</option>
+                        <option>THB</option>
+                        <option>ZAR</option>
+                    </select>
+
+                    <input type="number" id="result" readonly placeholder="Sonuç">
+
+                    <span>Copyright - Nisa Kars </span>
+                </div>
+            </div>
+        </div>
+        <script src="currency.js"></script>
+        <script src="main.js"></script>
+</body>
+</html>
